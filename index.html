@@ -104,8 +104,12 @@
                 <div class="sparkle sp-4"></div>
                 <div class="sparkle sp-5"></div>
             </div>
-            <p id="splash-hint" class="mt-8 md:mt-12 text-eco-400 text-xs md:text-sm tracking-[0.2em] font-semibold text-center uppercase leading-relaxed max-w-sm md:max-w-2xl animate-pulse transition-opacity duration-300 pointer-events-none">
+            
+            <p class="lang-en mt-8 md:mt-12 text-eco-400 text-xs md:text-sm tracking-[0.2em] font-semibold text-center uppercase leading-relaxed max-w-sm md:max-w-2xl animate-pulse transition-opacity duration-300 pointer-events-none">
                 You are invited to walk on the future road
+            </p>
+            <p class="lang-vi hidden mt-8 md:mt-12 text-eco-400 text-xs md:text-sm tracking-[0.2em] font-semibold text-center uppercase leading-relaxed max-w-sm md:max-w-2xl animate-pulse transition-opacity duration-300 pointer-events-none">
+                Bạn được mời bước đi trên con đường của tương lai
             </p>
         </div>
     </div>
@@ -117,15 +121,31 @@
                     <img src="logo.png" alt="GreenPath Tây Ninh Logo" class="h-12 w-auto object-contain rounded mix-blend-screen">
                     <span class="font-bold text-xl tracking-tight text-white hidden sm:block">GreenPath <span class="text-eco-500">Tây Ninh</span></span>
                 </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-center space-x-8">
-                        <a href="#about" class="text-slate-300 hover:text-eco-400 transition-colors text-sm font-semibold">About</a>
-                        <a href="#technology" class="text-slate-300 hover:text-eco-400 transition-colors text-sm font-semibold">Technology</a>
-                        <a href="#products" class="text-slate-300 hover:text-eco-400 transition-colors text-sm font-semibold">Products</a>
-                        <a href="#esg" class="text-slate-300 hover:text-eco-400 transition-colors text-sm font-semibold">ESG Impact</a>
-                        <a href="#contact" class="text-slate-300 hover:text-eco-400 transition-colors text-sm font-semibold">Contact</a>
-                        <a href="#contact" class="bg-eco-500 hover:bg-eco-600 text-white px-5 py-2.5 rounded-lg text-sm font-bold shadow-[0_0_15px_rgba(16,185,129,0.3)] transition-all hover:shadow-[0_0_25px_rgba(16,185,129,0.5)]">Partner With Us</a>
+                
+                <div class="flex items-center gap-4 lg:gap-6">
+                    <div class="hidden md:flex items-center space-x-6">
+                        <a href="#about" class="text-slate-300 hover:text-eco-400 transition-colors text-sm font-semibold">
+                            <span class="lang-en">About</span><span class="lang-vi hidden">Câu Chuyện</span>
+                        </a>
+                        <a href="#technology" class="text-slate-300 hover:text-eco-400 transition-colors text-sm font-semibold">
+                            <span class="lang-en">Technology</span><span class="lang-vi hidden">Công Nghệ</span>
+                        </a>
+                        <a href="#products" class="text-slate-300 hover:text-eco-400 transition-colors text-sm font-semibold">
+                            <span class="lang-en">Products</span><span class="lang-vi hidden">Sản Phẩm</span>
+                        </a>
+                        <a href="#esg" class="text-slate-300 hover:text-eco-400 transition-colors text-sm font-semibold">
+                            <span class="lang-en">ESG</span><span class="lang-vi hidden">ESG</span>
+                        </a>
                     </div>
+                    
+                    <div class="flex items-center border border-slate-700 rounded-full p-0.5 bg-slate-800/80 ml-2">
+                        <button id="btn-en" class="px-3 py-1.5 text-xs font-bold rounded-full bg-eco-500 text-white transition-all shadow-md" onclick="setLang('en')">EN</button>
+                        <button id="btn-vi" class="px-3 py-1.5 text-xs font-bold rounded-full text-slate-400 hover:text-white transition-all" onclick="setLang('vi')">VI</button>
+                    </div>
+
+                    <a href="#contact" class="hidden md:flex bg-eco-500 hover:bg-eco-600 text-white px-5 py-2.5 rounded-lg text-sm font-bold shadow-[0_0_15px_rgba(16,185,129,0.3)] transition-all hover:shadow-[0_0_25px_rgba(16,185,129,0.5)]">
+                        <span class="lang-en">Partner With Us</span><span class="lang-vi hidden">Hợp Tác</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -135,21 +155,36 @@
         <div class="absolute inset-0 bg-grid opacity-30"></div>
         <div class="absolute top-0 right-0 -mr-40 -mt-40 w-96 h-96 rounded-full bg-eco-500/10 blur-[100px]"></div>
         <div class="absolute bottom-0 left-0 -ml-40 -mb-40 w-96 h-96 rounded-full bg-amber-500/10 blur-[100px]"></div>
+        
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
+            
             <h1 class="text-5xl md:text-6xl lg:text-7xl font-black tracking-tight mb-8 leading-tight max-w-4xl mx-auto">
-                <span class="block text-transparent bg-clip-text bg-gradient-to-r from-eco-400 to-eco-600">Tire Waste Reimagined.</span>
-                <span class="block text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600 mt-2">Infrastructure Redefined.</span>
+                <span class="block text-transparent bg-clip-text bg-gradient-to-r from-eco-400 to-eco-600 pb-2">
+                    <span class="lang-en">Tire Waste Reimagined</span>
+                    <span class="lang-vi hidden">Tái Sinh Rác Thải Lốp Xe</span>
+                </span>
+                <span class="block text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600 mt-2 pb-2">
+                    <span class="lang-en">Infrastructure Redefined</span>
+                    <span class="lang-vi hidden">Tái Định Nghĩa Hạ Tầng</span>
+                </span>
             </h1>
-            <p class="max-w-3xl mx-auto text-lg md:text-xl text-slate-400 mb-12 leading-relaxed text-justify md:text-center">
+            
+            <p class="lang-en max-w-3xl mx-auto text-lg md:text-xl text-slate-400 mb-12 leading-relaxed text-justify md:text-center">
                 Pioneering technology to blend recycled tire rubber with bitumen, creating a highly durable composite that dramatically enhances load-bearing capacity and prevents road deformation.
             </p>
+            <p class="lang-vi hidden max-w-3xl mx-auto text-lg md:text-xl text-slate-400 mb-12 leading-relaxed text-justify md:text-center">
+                Công nghệ tiên phong pha trộn cao su lốp xe tái chế với nhựa đường, tạo ra hỗn hợp composite siêu bền giúp tăng cường đáng kể khả năng chịu tải và chống biến dạng mặt đường.
+            </p>
+
             <div class="flex flex-col sm:flex-row gap-4 justify-center w-full">
                 <a href="#products" class="inline-flex justify-center items-center px-8 py-4 text-base font-bold rounded-lg text-white bg-eco-500 hover:bg-eco-600 shadow-[0_4px_20px_rgba(16,185,129,0.3)] hover:-translate-y-1 transition-all w-full sm:w-auto">
-                    Explore Our Product
+                    <span class="lang-en">Explore Our Product</span>
+                    <span class="lang-vi hidden">Khám Phá Sản Phẩm</span>
                     <svg class="ml-2 -mr-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                 </a>
                 <a href="#about" class="inline-flex justify-center items-center px-8 py-4 text-base font-bold rounded-lg text-slate-300 bg-slate-800 border border-slate-700 hover:bg-slate-700 hover:text-white transition-all w-full sm:w-auto">
-                    Our Story
+                    <span class="lang-en">Our Story</span>
+                    <span class="lang-vi hidden">Câu Chuyện Của Chúng Tôi</span>
                 </a>
             </div>
         </div>
@@ -159,12 +194,21 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
                 <div class="lg:col-span-7 relative z-10 text-justify">
-                    <h2 class="text-eco-500 font-semibold tracking-[0.2em] uppercase text-xs mb-4">An Open Letter</h2>
-                    <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-10 leading-tight">
+                    <h2 class="text-eco-500 font-semibold tracking-[0.2em] uppercase text-xs mb-4">
+                        <span class="lang-en">An Open Letter</span>
+                        <span class="lang-vi hidden">Tâm Thư</span>
+                    </h2>
+                    
+                    <h3 class="lang-en text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-10 leading-tight">
                         The Journey of Rebirth – <br/>
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">Paving the Future</span>
                     </h3>
-                    <div class="text-slate-300 text-lg leading-relaxed space-y-6">
+                    <h3 class="lang-vi hidden text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-10 leading-tight">
+                        Hành trình Tái sinh – <br/>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">Paving the Future</span>
+                    </h3>
+
+                    <div class="lang-en text-slate-300 text-lg leading-relaxed space-y-6">
                         <p class="first-letter:text-6xl first-letter:font-black first-letter:text-eco-500 first-letter:mr-3 first-letter:float-left first-letter:leading-[0.8]">
                             Did you know that every discarded tire takes hundreds of years to decompose naturally? Here in Tây Ninh, we decided to shorten that meaningless wait by giving them a new, brilliant, and more valuable lifecycle.
                         </p>
@@ -178,21 +222,63 @@
                             Through breakthrough polymer composite technology, we have created "rubber roads." We seamlessly blend standard bitumen with crumb rubber derived from old tires. This process completely transforms the material, significantly enhancing its mechanical properties to yield a high-performance modified bitumen resistant to extreme load and deformation.
                         </p>
                         <p class="italic text-amber-500 font-medium mt-8 pt-6 border-t border-slate-800/50">
-                            "Every kilometer of road paved with GreenPath's materials means thousands of tires are rescued from industrial incinerators. Join us in laying down these green ribbons."
+                            "Every kilometer of road paved with GreenPath's materials means thousands of tires are rescued from industrial incinerators. Join us in laying down these green ribbons, building sustainable infrastructure for future generations."
                         </p>
-                        <div class="mt-8">
-                            <p class="font-bold text-white text-xl">The GreenPath Team</p>
-                            <p class="text-sm text-eco-500 tracking-wider uppercase mt-1">Tây Ninh, Vietnam</p>
-                        </div>
+                    </div>
+
+                    <div class="lang-vi hidden text-slate-300 text-lg leading-relaxed space-y-6">
+                        <p class="first-letter:text-6xl first-letter:font-black first-letter:text-eco-500 first-letter:mr-3 first-letter:float-left first-letter:leading-[0.8]">
+                            Bạn có biết, mỗi chiếc lốp xe bị vứt bỏ phải mất hàng trăm năm để phân hủy tự nhiên? Tại Tây Ninh, chúng tôi quyết định rút ngắn khoảng thời gian vô nghĩa đó bằng một vòng đời mới, rực rỡ và giá trị hơn.
+                        </p>
+                        <p class="font-medium text-white text-xl my-8 border-l-4 border-eco-500 pl-5 py-1 bg-slate-800/30 rounded-r-lg">
+                            Chào mừng bạn đến với GreenPath Tây Ninh!
+                        </p>
+                        <p>
+                            Chúng tôi là một đội ngũ những kỹ sư và chuyên gia chiến lược mang trong mình khát vọng hiện thực hóa mô hình kinh tế tuần hoàn. Nhìn thấy các tuyến đường liên tục hằn lún dưới cái nắng gắt, và những bãi lốp xe cũ phơi mình ngoài bãi rác, chúng tôi hiểu rằng ngành xây dựng hạ tầng cần một cuộc cách mạng về vật liệu.
+                        </p>
+                        <p>
+                            Bằng công nghệ composite polymer đột phá, chúng tôi đã tạo ra "những con đường cao su" – nơi sự dẻo dai, bền bỉ của lốp xe cũ được chuyển hóa hoàn toàn vào từng thảm nhựa đường CRMB. Chúng tôi không thỏa hiệp với các tiêu chuẩn thấp. Mọi quy trình từ R&D công thức phụ gia đến thẩm định cấu trúc màng polymer đều được kiểm soát nghiêm ngặt, đảm bảo sản phẩm không chỉ rẻ hơn, bền vững hơn mà còn hoàn toàn minh bạch về các chỉ số an toàn môi trường.
+                        </p>
+                        <p class="italic text-amber-500 font-medium mt-8 pt-6 border-t border-slate-800/50">
+                            "Mỗi kilomet đường sử dụng vật liệu của GreenPath là hàng ngàn chiếc lốp xe được "cứu" khỏi các lò đốt công nghiệp. Hãy cùng chúng tôi trải những dải lụa xanh, kiến tạo nên hạ tầng bền vững cho thế hệ tương lai."
+                        </p>
+                    </div>
+
+                    <div class="mt-8">
+                        <p class="font-bold text-white text-xl">
+                            <span class="lang-en">The GreenPath Team</span>
+                            <span class="lang-vi hidden">Đội ngũ GreenPath</span>
+                        </p>
+                        <p class="text-sm text-eco-500 tracking-wider uppercase mt-1">
+                            <span class="lang-en">Tây Ninh, Vietnam</span>
+                            <span class="lang-vi hidden">Tây Ninh, Việt Nam</span>
+                        </p>
                     </div>
                 </div>
+
                 <div class="lg:col-span-5 relative">
                     <div class="relative flex flex-col gap-8">
                         <div class="bg-theme border border-slate-700/50 p-4 rounded-2xl shadow-2xl">
                             <img src="The Environmental Burden.png" alt="The Burden" class="w-full h-auto object-contain rounded-xl">
+                            <div class="flex items-center gap-3 mt-4 px-2">
+                                <span class="flex h-2 w-2 rounded-full bg-amber-500"></span>
+                                <p class="text-sm font-bold text-slate-200 uppercase tracking-widest">
+                                    <span class="lang-en">The Burden</span><span class="lang-vi hidden">Gánh Nặng</span>
+                                </p>
+                            </div>
                         </div>
-                        <div class="bg-theme border border-slate-700/50 p-4 rounded-2xl shadow-2xl lg:ml-12">
+                        <div class="bg-theme border border-slate-700/50 p-4 rounded-2xl shadow-2xl lg:ml-12 relative z-10">
                             <img src="The GreenPath Solution.png" alt="Our Solution" class="w-full h-auto object-contain rounded-xl">
+                            <div class="flex items-center gap-3 mt-4 px-2">
+                                <span class="flex h-2 w-2 rounded-full bg-eco-500"></span>
+                                <p class="text-sm font-bold text-slate-200 uppercase tracking-widest">
+                                    <span class="lang-en">Our Solution</span><span class="lang-vi hidden">Giải Pháp</span>
+                                </p>
+                            </div>
+                            <p class="px-2 mt-2 text-sm text-slate-400">
+                                <span class="lang-en">Engineered Crumb Rubber Modified Bitumen (CRMB) offering superior resistance to rutting and heavy traffic.</span>
+                                <span class="lang-vi hidden">Nhựa đường biến tính từ cao su (CRMB) với khả năng chống hằn lún và chịu tải vượt trội.</span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -203,31 +289,53 @@
     <section id="technology" class="py-24 relative border-t border-slate-800/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-eco-500 font-semibold tracking-wide uppercase text-sm mb-3">Our Core Technology</h2>
-                <h3 class="text-3xl md:text-4xl font-bold text-white mb-6 text-center">Engineered for Extreme Durability</h3>
-                <p class="text-slate-400 text-lg text-justify md:text-center">By manipulating polymer structures at the microscopic level, we turn an environmental liability into an infrastructure asset.</p>
+                <h2 class="text-eco-500 font-semibold tracking-wide uppercase text-sm mb-3">
+                    <span class="lang-en">Our Core Technology</span><span class="lang-vi hidden">Công Nghệ Cốt Lõi</span>
+                </h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-white mb-6 text-center">
+                    <span class="lang-en">Engineered for Extreme Durability</span><span class="lang-vi hidden">Thiết Kế Cho Độ Bền Cực Đại</span>
+                </h3>
+                <p class="text-slate-400 text-lg text-justify md:text-center">
+                    <span class="lang-en">By manipulating polymer structures at the microscopic level, we turn an environmental liability into an infrastructure asset.</span>
+                    <span class="lang-vi hidden">Bằng cách can thiệp vào cấu trúc polymer ở cấp độ vi mô, chúng tôi biến gánh nặng môi trường thành nền tảng hạ tầng vững chắc.</span>
+                </p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-justify">
                 <div class="bg-slate-800/30 border border-slate-700/50 rounded-2xl p-8 hover:-translate-y-2 transition-all group">
                     <div class="w-12 h-12 bg-theme rounded-lg flex items-center justify-center mb-6 border border-slate-700">
                         <svg class="w-6 h-6 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
                     </div>
-                    <h4 class="text-xl font-bold text-white mb-3">Composite Blending</h4>
-                    <p class="text-slate-400">Advanced thermal blending of standard bitumen and crumb rubber maximizes the mechanical resistance against extreme deformation, rutting, and heavy traffic loads.</p>
+                    <h4 class="text-xl font-bold text-white mb-3">
+                        <span class="lang-en">Composite Blending</span><span class="lang-vi hidden">Phối Trộn Composite</span>
+                    </h4>
+                    <p class="text-slate-400">
+                        <span class="lang-en">Advanced thermal blending of standard bitumen and crumb rubber maximizes the mechanical resistance against extreme deformation, rutting, and heavy traffic loads.</span>
+                        <span class="lang-vi hidden">Công nghệ trộn nhiệt tiên tiến giữa nhựa đường tiêu chuẩn và bột cao su giúp tối đa hóa khả năng chống biến dạng, hằn lún và chịu tải trọng nặng.</span>
+                    </p>
                 </div>
                 <div class="bg-slate-800/30 border border-slate-700/50 rounded-2xl p-8 hover:-translate-y-2 transition-all group">
                     <div class="w-12 h-12 bg-theme rounded-lg flex items-center justify-center mb-6 border border-slate-700">
                         <svg class="w-6 h-6 text-eco-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                     </div>
-                    <h4 class="text-xl font-bold text-white mb-3">Eco-Processing</h4>
-                    <p class="text-slate-400">State-of-the-art, zero-emission tire shredding and cryogenic treatment facilities ensure our modified bitumen leaves virtually no carbon footprint.</p>
+                    <h4 class="text-xl font-bold text-white mb-3">
+                        <span class="lang-en">Eco-Processing</span><span class="lang-vi hidden">Xử Lý Sinh Thái</span>
+                    </h4>
+                    <p class="text-slate-400">
+                        <span class="lang-en">State-of-the-art, zero-emission tire shredding and cryogenic treatment facilities ensure our modified bitumen leaves virtually no carbon footprint.</span>
+                        <span class="lang-vi hidden">Hệ thống băm lốp và xử lý làm lạnh không phát thải tiên tiến đảm bảo quy trình sản xuất nhựa đường biến tính không để lại dấu chân carbon.</span>
+                    </p>
                 </div>
                 <div class="bg-slate-800/30 border border-slate-700/50 rounded-2xl p-8 hover:-translate-y-2 transition-all group">
                     <div class="w-12 h-12 bg-theme rounded-lg flex items-center justify-center mb-6 border border-slate-700">
                         <svg class="w-6 h-6 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                     </div>
-                    <h4 class="text-xl font-bold text-white mb-3">Infrastructure Longevity</h4>
-                    <p class="text-slate-400">Dramatically increasing the highway lifecycle reduces ongoing road maintenance costs, pothole patching frequency, and material consumption.</p>
+                    <h4 class="text-xl font-bold text-white mb-3">
+                        <span class="lang-en">Infrastructure Longevity</span><span class="lang-vi hidden">Tuổi Thọ Hạ Tầng</span>
+                    </h4>
+                    <p class="text-slate-400">
+                        <span class="lang-en">Dramatically increasing the highway lifecycle reduces ongoing road maintenance costs, pothole patching frequency, and material consumption.</span>
+                        <span class="lang-vi hidden">Tăng đáng kể vòng đời của đường cao tốc, giảm thiểu chi phí bảo trì liên tục, tần suất vá ổ gà và tiêu hao vật liệu mới.</span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -236,10 +344,18 @@
     <section id="products" class="py-24 relative border-t border-slate-800/50 bg-slate-900/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-4xl mx-auto mb-16">
-                <h2 class="text-amber-500 font-semibold tracking-wide uppercase text-sm mb-3">Commercial Solutions</h2>
-                <h3 class="text-3xl md:text-4xl font-bold text-white mb-6 text-center">Crumb Rubber Modified Bitumen</h3>
-                <p class="text-slate-400 text-lg text-justify md:text-center mb-16">
+                <h2 class="text-amber-500 font-semibold tracking-wide uppercase text-sm mb-3">
+                    <span class="lang-en">Commercial Solutions</span><span class="lang-vi hidden">Giải Pháp Thương Mại</span>
+                </h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-white mb-6 text-center">
+                    <span class="lang-en">Crumb Rubber Modified Bitumen</span><span class="lang-vi hidden">Nhựa Đường Biến Tính Cao Su</span>
+                </h3>
+                
+                <p class="lang-en text-slate-400 text-lg text-justify md:text-center mb-16">
                     GreenPath Tây Ninh manufactures high-performance Modified Bitumen. By seamlessly blending asphalt with recycled tire rubber, we enhance its mechanical properties to create a composite mixture with superior load-bearing capacity and unmatched resistance to road deformation. Available in tailored packaging for any application.
+                </p>
+                <p class="lang-vi hidden text-slate-400 text-lg text-justify md:text-center mb-16">
+                    GreenPath Tây Ninh sản xuất Nhựa đường biến tính (CRMB) hiệu suất cao. Bằng cách kết hợp hoàn hảo nhựa đường tiêu chuẩn với cao su lốp xe tái chế, chúng tôi cải thiện đặc tính cơ học để tạo ra hỗn hợp với khả năng chịu tải vượt trội và chống biến dạng mặt đường. Tùy chọn đóng gói linh hoạt cho mọi quy mô dự án.
                 </p>
 
                 <div class="main-product-showcase relative max-w-4xl mx-auto mb-20 rounded-3xl overflow-hidden border border-slate-700/50 shadow-2xl group transition-all duration-700 hover:border-eco-500/30">
@@ -259,10 +375,18 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 8l1.5 12.5A1.5 1.5 0 009 22h6a1.5 1.5 0 001.5-1.5L18 8M4 6h16v2H4V6zM5 6c0-2.5 3.134-4 7-4s7 1.5 7 4"/>
                             </svg>
                         </div>
-                        <h4 class="text-2xl font-bold text-white mb-2">Plastic Bucket 5/10/20kg</h4>
-                        <p class="text-eco-400 font-semibold text-sm mb-4 tracking-widest uppercase">Packaging: Sealed Pail</p>
-                        <p class="text-slate-400 leading-relaxed text-sm text-justify">
-                            Convenient, heavy-duty plastic buckets designed for airtight storage and easy manual handling. <strong>Perfect application:</strong> Ideal for highly mobile maintenance crews, fast <strong>pothole patching</strong>, crack sealing, and localized minor road repairs without the need for large equipment.
+                        <h4 class="text-2xl font-bold text-white mb-2">
+                            <span class="lang-en">Plastic Bucket 5-20kg</span><span class="lang-vi hidden">Xô Nhựa 5-20kg</span>
+                        </h4>
+                        <p class="text-eco-400 font-semibold text-sm mb-4 tracking-widest uppercase">
+                            <span class="lang-en">Packaging: Sealed Pail</span><span class="lang-vi hidden">Quy cách: Xô Kín Cầm Tay</span>
+                        </p>
+                        
+                        <p class="lang-en text-slate-400 leading-relaxed text-sm text-justify">
+                            Convenient, heavy-duty plastic buckets designed for airtight storage and easy manual handling. <strong class="text-white">Perfect application:</strong> Ideal for highly mobile maintenance crews, fast <strong>pothole patching</strong>, crack sealing, and localized minor road repairs without the need for large equipment.
+                        </p>
+                        <p class="lang-vi hidden text-slate-400 leading-relaxed text-sm text-justify">
+                            Xô nhựa chịu lực tiện lợi được thiết kế để bảo quản kín khí và dễ dàng xách tay thủ công. <strong class="text-white">Ứng dụng hoàn hảo:</strong> Lý tưởng cho các đội duy tu cơ động, vá <strong>ổ gà</strong> nhanh, trám nứt và sửa chữa đường cục bộ mà không cần thiết bị hạng nặng.
                         </p>
                     </div>
                 </div>
@@ -273,10 +397,18 @@
                         <div class="w-16 h-16 bg-amber-500/10 border border-amber-500/20 rounded-2xl flex items-center justify-center mb-6 text-amber-500">
                             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 6a7 2 0 1014 0 7 2 0 10-14 0zM5 18a7 2 0 1014 0 7 2 0 10-14 0zM5 6v12M19 6v12M5 10a7 2 0 1014 0 7 2 0 10-14 0zM5 14a7 2 0 1014 0 7 2 0 10-14 0z"/></svg>
                         </div>
-                        <h4 class="text-2xl font-bold text-white mb-2">Plastic Drum 100kg</h4>
-                        <p class="text-amber-500 font-semibold text-sm mb-4 tracking-widest uppercase">Packaging: Sealed Drum</p>
-                        <p class="text-slate-400 leading-relaxed text-sm text-justify">
-                            Airtight plastic drums designed to safely preserve the rubber-bitumen mixture and block moisture. <strong>Perfect application:</strong> Specialized hot-mix asphalt plants and projects requiring precise mixing ratios for long-term road surfacing.
+                        <h4 class="text-2xl font-bold text-white mb-2">
+                            <span class="lang-en">Plastic Drum 100kg</span><span class="lang-vi hidden">Thùng Phuy Nhựa 100kg</span>
+                        </h4>
+                        <p class="text-amber-500 font-semibold text-sm mb-4 tracking-widest uppercase">
+                            <span class="lang-en">Packaging: Sealed Drum</span><span class="lang-vi hidden">Quy cách: Thùng Phuy Kín</span>
+                        </p>
+                        
+                        <p class="lang-en text-slate-400 leading-relaxed text-sm text-justify">
+                            Airtight plastic drums designed to safely preserve the rubber-bitumen mixture and block moisture. <strong class="text-white">Perfect application:</strong> Specialized hot-mix asphalt plants and projects requiring precise mixing ratios for long-term road surfacing.
+                        </p>
+                        <p class="lang-vi hidden text-slate-400 leading-relaxed text-sm text-justify">
+                            Thùng phuy nhựa kín khí được thiết kế để bảo quản an toàn hỗn hợp nhựa đường-cao su, chống ẩm hoàn toàn. <strong class="text-white">Ứng dụng hoàn hảo:</strong> Trạm trộn bê tông nhựa nóng chuyên dụng và các dự án cần tỷ lệ trộn chính xác để lưu trữ lâu dài.
                         </p>
                     </div>
                 </div>
@@ -287,10 +419,18 @@
                         <div class="w-16 h-16 bg-cyan-500/10 border border-cyan-500/20 rounded-2xl flex items-center justify-center mb-6 text-cyan-500">
                             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 8l2 12a2 2 0 002 2h6a2 2 0 002-2l2-12H5z M5 8V5a2 2 0 012-2h10a2 2 0 012 2v3 M9 8v6 M15 8v6"/></svg>
                         </div>
-                        <h4 class="text-2xl font-bold text-white mb-2">Jumbo Bag 500kg</h4>
-                        <p class="text-cyan-400 font-semibold text-sm mb-4 tracking-widest uppercase">Packaging: FIBC Bulk Bag</p>
-                        <p class="text-slate-400 leading-relaxed text-sm text-justify">
-                            Heavy-duty bulk bags engineered for high-volume efficiency and rapid deployment. <strong>Perfect application:</strong> Heavy-duty <strong>expressway paving</strong>, national highways, and continuous large-scale infrastructure construction demanding massive load-bearing strength.
+                        <h4 class="text-2xl font-bold text-white mb-2">
+                            <span class="lang-en">Jumbo Bag 500kg</span><span class="lang-vi hidden">Bao Jumbo 500kg</span>
+                        </h4>
+                        <p class="text-cyan-400 font-semibold text-sm mb-4 tracking-widest uppercase">
+                            <span class="lang-en">Packaging: FIBC Bulk Bag</span><span class="lang-vi hidden">Quy cách: Bao Jumbo (FIBC)</span>
+                        </p>
+                        
+                        <p class="lang-en text-slate-400 leading-relaxed text-sm text-justify">
+                            Heavy-duty bulk bags engineered for high-volume efficiency and rapid deployment. <strong class="text-white">Perfect application:</strong> Heavy-duty <strong>expressway paving</strong>, national highways, and continuous large-scale infrastructure construction demanding massive load-bearing strength.
+                        </p>
+                        <p class="lang-vi hidden text-slate-400 leading-relaxed text-sm text-justify">
+                            Bao tải siêu cường thiết kế cho hiệu suất khối lượng lớn và triển khai nhanh. <strong class="text-white">Ứng dụng hoàn hảo:</strong> Thi công <strong>đường cao tốc</strong> chịu tải nặng, quốc lộ và các dự án hạ tầng quy mô lớn liên tục yêu cầu cường độ chịu lực khổng lồ.
                         </p>
                     </div>
                 </div>
@@ -302,20 +442,28 @@
     <section id="esg" class="py-20 bg-slate-900/40 border-y border-slate-800/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-white mb-4 text-glow">Measurable ESG Impact</h2>
+                <h2 class="text-3xl font-bold text-white mb-4 text-glow">
+                    <span class="lang-en">Measurable ESG Impact</span><span class="lang-vi hidden">Tác Động ESG Cụ Thể</span>
+                </h2>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <div class="p-6">
                     <div class="text-5xl font-black text-eco-500 mb-2 counter" data-target="250000">0</div>
-                    <div class="text-slate-400 uppercase tracking-widest text-xs">Tires Recycled</div>
+                    <div class="text-slate-400 uppercase tracking-widest text-xs">
+                        <span class="lang-en">Tires Recycled</span><span class="lang-vi hidden">Lốp Xe Tái Chế</span>
+                    </div>
                 </div>
                 <div class="p-6">
                     <div class="text-5xl font-black text-eco-500 mb-2 counter" data-target="18500">0</div>
-                    <div class="text-slate-400 uppercase tracking-widest text-xs">Tons of CO₂ Saved</div>
+                    <div class="text-slate-400 uppercase tracking-widest text-xs">
+                        <span class="lang-en">Tons of CO₂ Saved</span><span class="lang-vi hidden">Tấn CO₂ Cắt Giảm</span>
+                    </div>
                 </div>
                 <div class="p-6">
                     <div class="text-5xl font-black text-amber-500 mb-2 counter" data-target="420">0</div>
-                    <div class="text-slate-400 uppercase tracking-widest text-xs">Km of Green Roads</div>
+                    <div class="text-slate-400 uppercase tracking-widest text-xs">
+                        <span class="lang-en">Km of Green Roads</span><span class="lang-vi hidden">Km Đường Xanh</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -324,19 +472,38 @@
     <section id="contact" class="py-24 relative overflow-hidden border-t border-slate-800/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="bg-theme/80 backdrop-blur border border-slate-700/50 rounded-3xl p-8 md:p-16 shadow-2xl">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                    <div>
-                        <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6 text-center md:text-left">Build the future with us.</h2>
-                        <p class="text-slate-400 text-lg mb-8 text-center md:text-left">Tailored materials for B2B contractors and government infrastructure.</p>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                    <div class="pt-4">
+                        <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6 text-center md:text-left">
+                            <span class="lang-en">Build the future with us.</span><span class="lang-vi hidden">Kiến tạo tương lai cùng chúng tôi.</span>
+                        </h2>
+                        <p class="text-slate-400 text-lg mb-8 text-center md:text-left">
+                            <span class="lang-en">Tailored materials for B2B contractors and government infrastructure.</span>
+                            <span class="lang-vi hidden">Vật liệu chuyên biệt cho các nhà thầu B2B và hạ tầng chính phủ.</span>
+                        </p>
                         <div class="flex items-center space-x-4 mb-4 justify-center md:justify-start">
-                            <h4 class="text-white font-semibold italic text-center md:text-left">Phước Đông Industrial Zone, Tây Ninh</h4>
+                            <h4 class="text-white font-semibold italic text-center md:text-left">
+                                <span class="lang-en">Phước Đông Industrial Zone, Tây Ninh</span>
+                                <span class="lang-vi hidden">KCN Phước Đông, Tây Ninh</span>
+                            </h4>
                         </div>
                     </div>
+                    
                     <div class="bg-slate-900/60 rounded-2xl p-8 border border-slate-800 shadow-xl">
-                        <form action="#" class="space-y-5">
-                            <input type="text" class="w-full bg-theme border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500" placeholder="Organization">
-                            <input type="email" class="w-full bg-theme border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500" placeholder="Business Email">
-                            <button type="submit" class="w-full bg-eco-500 hover:bg-eco-600 text-white font-bold py-4 rounded-lg shadow-xl transition-all">Submit Request</button>
+                        <form action="#" class="space-y-4">
+                            <input type="text" class="lang-placeholder w-full bg-theme border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-eco-500 transition-colors" data-en="Full Name" data-vi="Họ và Tên" placeholder="Full Name" required>
+                            
+                            <input type="tel" class="lang-placeholder w-full bg-theme border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-eco-500 transition-colors" data-en="Phone Number" data-vi="Số điện thoại" placeholder="Phone Number" required>
+
+                            <input type="email" class="lang-placeholder w-full bg-theme border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-eco-500 transition-colors" data-en="Business Email" data-vi="Email Doanh Nghiệp" placeholder="Business Email" required>
+                            
+                            <input type="text" class="lang-placeholder w-full bg-theme border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-eco-500 transition-colors" data-en="Organization / Company" data-vi="Tổ chức / Công ty" placeholder="Organization / Company">
+                            
+                            <textarea class="lang-placeholder w-full bg-theme border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-eco-500 transition-colors" rows="4" data-en="Project Details / Message" data-vi="Nội dung liên hệ" placeholder="Project Details / Message" required></textarea>
+                            
+                            <button type="submit" class="w-full bg-eco-500 hover:bg-eco-600 text-white font-bold py-4 rounded-lg shadow-xl transition-all mt-2">
+                                <span class="lang-en">Submit Request</span><span class="lang-vi hidden">Gửi Yêu Cầu</span>
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -350,16 +517,48 @@
                 <img src="logo.png" alt="GP Logo" class="h-8 w-auto mix-blend-screen">
                 <span class="font-bold text-lg text-white">GreenPath Tây Ninh</span>
             </div>
-            <p class="text-slate-500 text-sm italic">© 2026 GreenPath. Paving a cleaner world.</p>
+            <p class="text-slate-500 text-sm italic">
+                <span class="lang-en">© 2026 GreenPath. Paving a cleaner world.</span>
+                <span class="lang-vi hidden">© 2026 GreenPath. Kiến tạo một thế giới sạch hơn.</span>
+            </p>
         </div>
     </footer>
 
     <script>
+        /* ================= 1. XỬ LÝ CHUYỂN ĐỔI NGÔN NGỮ (LANGUAGE TOGGLE) ================= */
+        function setLang(lang) {
+            const enElements = document.querySelectorAll('.lang-en');
+            const viElements = document.querySelectorAll('.lang-vi');
+            const placeholders = document.querySelectorAll('.lang-placeholder');
+            const btnEn = document.getElementById('btn-en');
+            const btnVi = document.getElementById('btn-vi');
+
+            if (lang === 'vi') {
+                enElements.forEach(el => el.classList.add('hidden'));
+                viElements.forEach(el => el.classList.remove('hidden'));
+                placeholders.forEach(el => el.placeholder = el.getAttribute('data-vi'));
+
+                btnVi.classList.add('bg-eco-500', 'text-white', 'shadow-md');
+                btnVi.classList.remove('text-slate-400');
+                btnEn.classList.remove('bg-eco-500', 'text-white', 'shadow-md');
+                btnEn.classList.add('text-slate-400');
+            } else {
+                viElements.forEach(el => el.classList.add('hidden'));
+                enElements.forEach(el => el.classList.remove('hidden'));
+                placeholders.forEach(el => el.placeholder = el.getAttribute('data-en'));
+
+                btnEn.classList.add('bg-eco-500', 'text-white', 'shadow-md');
+                btnEn.classList.remove('text-slate-400');
+                btnVi.classList.remove('bg-eco-500', 'text-white', 'shadow-md');
+                btnVi.classList.add('text-slate-400');
+            }
+        }
+
+        /* ================= 2. XỬ LÝ SPLASH SCREEN ================= */
         const splashLogo = document.getElementById('splash-logo-wrapper');
         const splashScreen = document.getElementById('splash-screen');
         const splashLeft = document.getElementById('splash-left');
         const splashRight = document.getElementById('splash-right');
-        const splashHint = document.getElementById('splash-hint');
 
         let isDisintegrating = false;
 
@@ -367,7 +566,9 @@
             if (isDisintegrating) return;
             isDisintegrating = true;
             splashLogo.classList.add('logo-explode');
-            splashHint.style.opacity = '0';
+            
+            document.querySelectorAll('#splash-screen p').forEach(p => p.style.opacity = '0');
+            
             setTimeout(() => {
                 splashLeft.style.transform = 'translateX(-100%)';
                 splashRight.style.transform = 'translateX(100%)';
@@ -378,6 +579,7 @@
             }, 400); 
         });
 
+        /* ================= 3. XỬ LÝ SỐ CHẠY (COUNTERS) ================= */
         const counters = document.querySelectorAll('.counter');
         const animateCounters = () => {
             counters.forEach(counter => {
